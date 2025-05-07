@@ -73,7 +73,6 @@ storage: list[dict] = [
         "info": "Benjamin Jackson is 20 y.o. Interests: history",
     },
 ]
-
 def add_student(name: str, marks: list[int] | None = None, details: str | None = None) -> dict:
     new_id = max([s["id"] for s in storage], default=0) + 1
     student = {
